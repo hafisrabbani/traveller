@@ -52,4 +52,6 @@
             </div>
         </div>
     </div>
+
+    @include('components.hubungiKami')
 @endsection
