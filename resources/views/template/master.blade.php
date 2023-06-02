@@ -16,7 +16,7 @@
     <title> @yield('title') | Traveller</title>
 </head>
 
-<body>
+<body class="m-0 p-0">
     <!--========== NAVBAR ==========-->
     @include('components.navbar')
 
