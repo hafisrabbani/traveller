@@ -39,7 +39,7 @@
     <script>
         @if (session('errors'))
             Swal.fire({
-                title: 'Pesan!',
+                title: 'Upss!',
                 text: '{{ session()->get('errors')->first() }}',
                 icon: 'warning',
                 showCancelButton: false,
@@ -62,7 +62,7 @@
         @if (session('error'))
             {
                 Swal.fire({
-                    title: 'Pesan!',
+                    title: 'Upss!',
                     text: '{{ session()->get('error') }}',
                     icon: 'error',
                     showCancelButton: false,
