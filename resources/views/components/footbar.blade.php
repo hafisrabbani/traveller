@@ -1,5 +1,5 @@
 <div>
-    <div class="row container-fluid">
+    <div class="row container-fluid mt-5">
         <!-- logo traveller -->
         <div class="col-md-5">
           <div class="container">
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <footer class="bg-black text-center py-5">
+      <footer class="bg-black text-center py-5 mt-3">
         <span class="text-white mx-auto">Copyright © 2023 Kelompok 2 Observasi Pariwisata Pantai Wilayah Banten</span>
       </footer>
 </div>

@@ -15,7 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('page.home');
+});
+
+Route::get('/about', function () {
+    return view('page.about');
+});
+
+Route::get('/details', function() {
+    return view('page.detail');
+});
+
+Route::get('/profile', function() {
+    return view('page.profil');
 });
 
 Route::controller(UserController::class)->group(function () {

@@ -1,4 +1,7 @@
 @extends('./../template/master')
+@section('title')
+    Home
+@endsection
 @section('content')
     <div class="container mt-5">
       <h1 class="fw-bold fs-1">Destinasi Populer</h1>
