@@ -17,26 +17,26 @@
         <div class="col-md-3 mb-3">
           <div class="h4 pb-3">Informasi Kontak</div>
           <div class="d-flex flex-column gap-3">
-            <div>
+            <a href="https://goo.gl/maps/gd6hsDP7K9oKht4K9?coh=178571&entry=tt" target="blank" class="text-dark text-decoration-none">
               <i class="fa-solid fa-location-dot"></i>
               <span>srengseng sawah</span>
-            </div>
-            <div>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=628187365833&text&type=phone_number&app_absent=0" target="blank" class="text-dark text-decoration-none">
              <i class="fa-solid fa-envelope"></i>
               <span>08187365833</span>
-            </div>
-            <div>
+            </a>
+            <a href="mailto:traveller919@gmail.com" target="blank" class="text-dark text-decoration-none">
              <i class="fa-solid fa-phone"></i>
               <span>traveller919@gmail.com</span>
-            </div>
+            </a>
           </div>
         </div>
         <!-- link -->
-        <div class="col-md-2 text-center">
+        <div class="col-md-2 text-center text-dark text-decoration-none">
           <div class="h4 pb-3">Link</div>
-          <p>Home</p>
-          <p>About Us</p>
-          <p>Destinasi</p>
+          <a href="{{ route('home') }}">Home</a>
+          <a href="">About Us</a>
+          <a href="">Destinasi</a>
         </div>
         <!-- follow kami -->
         <div class="col-md-2 mb-5 text-center">
