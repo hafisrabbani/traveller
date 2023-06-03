@@ -32,11 +32,11 @@
           </div>
         </div>
         <!-- link -->
-        <div class="col-md-2 text-center text-dark text-decoration-none">
+        <div class="col-md-2 text-center text-dark text-decoration-none d-flex flex-column gap-1">
           <div class="h4 pb-3">Link</div>
-          <a href="{{ route('home') }}">Home</a>
-          <a href="{{ route('about') }}">About Us</a>
-          <a href="{{ route('destination') }}">Destinasi</a>
+          <a href="{{ route('home') }}" class="text-dark text-decoration-none">Home</a>
+          <a href="{{ route('about') }}" class="text-dark text-decoration-none">About Us</a>
+          <a href="{{ route('destination') }}" class="text-dark text-decoration-none">Destinasi</a>
         </div>
         <!-- follow kami -->
         <div class="col-md-2 mb-5 text-center">
