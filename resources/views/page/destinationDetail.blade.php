@@ -74,6 +74,13 @@
 
             {{-- carrousel image --}}
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @foreach ($photos as $photo)
+                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="{{ $loop->index }}" @if ($loop->iteration == 1) class="active" @endif
+                            aria-current="true" aria-label="Slide {{ $loop->iteration }}"></button>
+                    @endforeach
+                </div>
                 <div class="carousel-inner">
                     @foreach ($photos as $photo)
                         <div class="carousel-item @if ($loop->iteration == 1) active @endif">

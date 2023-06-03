@@ -9,9 +9,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav d-md-flex gap-5">
                     <a class="nav-link active text-white" aria-current="page" href="{{ route('home') }}">Home</a>
-                    <a class="nav-link text-white" href="#">About Us</a>
+                    <a class="nav-link text-white" href="{{ route('about') }}">About Us</a>
                     <a class="nav-link text-white" href="#">Destination</a>
-                    <a class="nav-link text-white" href="#">Profile</a>
+                    <a class="nav-link text-white" href="{{ route('profile') }}">Profile</a>
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
             </div>

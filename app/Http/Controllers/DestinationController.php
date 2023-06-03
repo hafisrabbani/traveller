@@ -12,6 +12,6 @@ class DestinationController extends Controller
     {
         $photos = PhotoDestination::where('destination_id', $id)->get();
         $destination = Destination::find($id);
-        return view('destinationDetail', ['destination' => $destination, 'photos' => $photos]);
+        return view('page.destinationDetail', ['destination' => $destination, 'photos' => $photos]);
     }
 }
