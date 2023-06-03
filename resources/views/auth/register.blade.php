@@ -3,6 +3,15 @@
 @section('title')
     register
 @endsection
+@section('navbarTitle')
+    Register
+@endsection
+@section('navbarSubtitle')
+    Home > profile
+@endsection
+@section('navbarImage')
+    {{ asset('assets/images/pantai.png') }}
+@endsection
 
 @section('content')
     <div class="row mx-2 d-flex justify-content-center">

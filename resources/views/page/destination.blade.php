@@ -1,10 +1,14 @@
 @extends('./../template/master')
 @section('title')
-    Home
+    Destination
 @endsection
 
 @section('navbarTitle')
     Traveller
+@endsection
+
+@section('navbarSubtitle')
+    Home > Destination
 @endsection
 
 @section('navbarImage')

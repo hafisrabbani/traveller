@@ -22,6 +22,6 @@ class DatabaseSeeder extends Seeder
             'email' => 'kembarmetal@gmail.com',
             'password' => Hash::make('12345678')
         ]);
-        $this->call(DestinationSeeder::class);
+        $this->call([DestinationSeeder::class, PhotoDestinationSeeder::class]);
     }
 }
