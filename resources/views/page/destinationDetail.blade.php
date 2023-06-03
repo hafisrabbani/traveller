@@ -108,12 +108,13 @@
                     <div class="h5">Komentar</div>
                 </div>
                 <div class="card-body text-center">
-                    <form action="" method="post">
+                    <form action="{{ route('destination.comment') }}" method="post">
                         @csrf
 
                         <input type="text" name="name" id="" class="form-control mb-3"
                             placeholder="your name...">
-                        <textarea name="massage" rows="10" class="form-control mb-3" placeholder="your massage..."></textarea>
+                        <textarea name="comment" rows="10" class="form-control mb-3" placeholder="your massage..."></textarea>
+                        <input type="hidden" name="destination_id" value="{{ $id }}">
 
                         <button type="submit" class="btn btn-dark form-control input-lg">kirim</button>
                     </form>

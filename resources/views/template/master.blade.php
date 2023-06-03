@@ -58,7 +58,7 @@
 
         @if (session('success'))
             Swal.fire({
-                title: 'Pesan!',
+                title: 'Massage!',
                 text: '{{ session()->get('success') }}',
                 icon: 'success',
                 showCancelButton: false,
