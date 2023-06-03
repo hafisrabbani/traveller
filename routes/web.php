@@ -44,7 +44,7 @@ Route::controller(UserController::class)->group(function () {
 
         Route::middleware('auth')->group(function () {
             Route::get('profile', 'profilePage')->name('profile');
-            Route::post('logout', 'logout')->name('auth.logout');
+            Route::get('logout', 'logout')->name('auth.logout');
         });
     });
 });

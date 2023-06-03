@@ -29,7 +29,7 @@ class UserController extends Controller
 
             Auth::login($user);
             session()->flash('success', 'yeah, login succeeded!');
-            return redirect()->route('auth.loginPage');;
+            return redirect()->route('profile');;
         } else {
             return back()->with('error', 'the email is unregistered');
         }
@@ -62,11 +62,18 @@ class UserController extends Controller
 
         Auth::login($user);
         session()->flash('success', 'yeah, login succeeded!');
-        return redirect()->route('auth.loginPage');
+        return redirect()->route('profile');
     }
 
     public function logout()
     {
         Auth::logout();
+        session()->flash('success', 'yeah, logout succeeded!');
+        return redirect()->route('auth.loginPage');
+    }
+
+    public function profilePage()
+    {
+        return view('page.profil');
     }
 }

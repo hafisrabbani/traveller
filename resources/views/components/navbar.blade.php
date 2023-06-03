@@ -13,6 +13,10 @@
                     <a class="nav-link text-white" href="{{ route('destination') }}">Destination</a>
                     <a class="nav-link text-white" href="{{ route('profile') }}">Profile</a>
                     <a class="nav-link text-white" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    @auth
+                        <a class="nav-link text-white" href="{{ route('auth.logout') }}"><i
+                                class="fa-solid fa-right-from-bracket"></i></a>
+                    @endauth
                 </div>
             </div>
         </div>

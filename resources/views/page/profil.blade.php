@@ -33,8 +33,8 @@
             <img src="{{ asset('assets/images/profil.jpg') }}" class="position-absolute rounded-circle" width="200"
                 height="200" style="top: -200px" alt="profil">
             <div class="text-center">
-                <h3 class="mt-5 fs-1 fw-bold">Muhammad Dhani</h3>
-                <p class="text-email">dhanimuhammad88@gmail.com</p>
+                <h3 class="mt-5 fs-1 fw-bold">{{ auth()->user()->name }}</h3>
+                <p class="text-email">{{ auth()->user()->email }}</p>
             </div>
         </div>
         <div class="container col-12 border border-2 py-5 d-grid gap-5 d-flex justify-content-center">
