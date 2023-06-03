@@ -1,3 +1,28 @@
+<style>
+    .nav-title {
+        top : 21rem;
+    }
+    .nav-subtitle {
+        top: 25rem;
+    }
+    @media screen and (max-width : 450px) {
+        .nav-title {
+            top: 4rem;
+        }
+        .nav-subtitle {
+            top : 6rem
+        }
+    }
+    @media screen and (max-width : 800px) {
+        .nav-title {
+            top: 10rem;
+        }
+        .nav-subtitle {
+            top : 15rem
+        }
+    }
+</style>
+
 <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary z-6  w-100 position-fixed">
         <div class="container">
@@ -22,8 +47,8 @@
         </div>
     </nav>
     <div class="position-relative d-flex justify-content-center">
-        <h1 class="position-absolute z-2 align-items-center text-white" style="top: 21rem">{{ $navbarTitle }}</h1>
-        <h4 class="position-absolute z-2 align-items-center text-white" style="top: 25rem">{{ $navbarSubtitle }}</h4>
+        <h1 class="position-absolute z-2 align-items-center text-white nav-title">{{ $navbarTitle }}</h1>
+        <h4 class="position-absolute z-2 align-items-center text-white nav-subtitle">{{ $navbarSubtitle }}</h4>
     </div>
     <div class="">
         <img src={{ $navbarImage }} alt="pantai" class="w-100 overflow-hidden top-0" />
