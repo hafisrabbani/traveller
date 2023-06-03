@@ -57,8 +57,10 @@
                     <span>{{ $destination->location }}</span>
                 </div>
             </div>
-            <iframe src="{{ $destination->maps_link }}" width="925" height="414" style="border:0;" allowfullscreen=""
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-12">
+                <iframe src="{{ $destination->maps_link }}" class="w-100 h-100" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
             <hr class="my-5">
             <div class="d-flex flex-row gap-3 justify-content-between">
