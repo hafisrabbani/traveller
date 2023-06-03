@@ -1,6 +1,16 @@
 @extends('template.master')
 @section('title')
+    Home
 @endsection
+
+@section('navbarTitle')
+    Traveller
+@endsection
+
+@section('navbarImage')
+    {{ asset('assets/images/pantai.png') }}
+@endsection
+
 @section('content')
     <div class="container mt-5">
         <h1 class="fw-bold fs-1">Destinasi Populer</h1>
@@ -28,7 +38,9 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
-                        <a href="#" class="btn btn-dark">Search Now</a>
+                        <form action="{{ route('destination.detail', $destination->id) }}" method="get">
+                            <button class="btn btn-dark" type="submit">Search Now</button>
+                        </form>
                     </div>
                 </div>
             </div>

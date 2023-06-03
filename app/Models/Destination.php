@@ -9,5 +9,5 @@ class Destination extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'description', 'location', 'provinsi', 'photo_Path'];
+    protected $fillable = ['name', 'description', 'location', 'provinsi', 'photo_Path', 'maps_link', 'long_description'];
 }

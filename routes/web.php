@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DestinationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -34,5 +35,12 @@ Route::controller(UserController::class)->group(function () {
         Route::middleware('auth')->group(function () {
             Route::post('logout', 'logout')->name('auth.logout');
         });
+    });
+});
+
+Route::controller(DestinationController::class)->group(function () {
+    Route::prefix('destination')->group(function () {
+
+        Route::get('detail/{id}', 'index')->name('destination.detail');
     });
 });

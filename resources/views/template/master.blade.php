@@ -18,9 +18,17 @@
 
 <body class="m-0 p-0">
     <!--========== NAVBAR ==========-->
-    @include('components.navbar')
-
-
+    @component('components.navbar')
+        @slot('navbarTitle')
+            @yield('navbarTitle')
+        @endslot
+        @slot('navbarSubtitle')
+            @yield('navbarSubtitle')
+        @endslot
+        @slot('navbarImage')
+            @yield('navbarImage')
+        @endslot
+    @endcomponent
     <!--========== CONTENTS ==========-->
     <div class="my-4 bg-white p-4">
         @yield('content')
