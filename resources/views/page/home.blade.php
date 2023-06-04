@@ -32,11 +32,16 @@
                     <p class="card-text">{{ $destination->description }} </p>
                     <div class="d-flex justify-content-between">
                         <div>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
+                            @php
+                                $y = $loop->iteration;
+                            @endphp
+
+                            @for ($i = 1; $i <= $rating[$y]; $i++)
+                                <span class="fa fa-star" style="color: gold"></span>
+                            @endfor
+                            @for ($i = $rating[$y] + 1; $i <= 5; $i++)
+                                <span class="fa fa-star"></span>
+                            @endfor
                         </div>
                         <form action="{{ route('destination.detail', $destination->id) }}" method="get">
                             <button class="btn btn-dark" type="submit">Search Now</button>
