@@ -9,6 +9,9 @@
         background: transparent;
         z-index: 100;
     }
+    .text {
+        text-align: left !important;
+    }
     @media screen and (max-width : 450px) {
         .nav-title {
             top: 4rem;
@@ -36,7 +39,7 @@
 <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary text-center z-6 bg-nav w-100 position-fixed">
         <div class="container">
-            <a class="navbar-brand col-md-6 text-white fs-4 fw-bold" href="{{ route('home') }}">Traveller</a>
+            <a class="navbar-brand col-md-6 text-white fs-4 fw-bold text" href="{{ route('home') }}">Traveller</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

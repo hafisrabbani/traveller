@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="container mt-2 d-flex flex-wrap justify-md-content-between justify-content-center">
+    <div class="container mt-2 d-flex flex-wrap justify-md-content-between gap-3 justify-content-center">
         @foreach ($destinations as $destination)
             <div class="card my-4" style="width: 22rem;">
                 <img src={{ asset($destination->photo_Path) }} class="card-img-top" alt="...">
