@@ -1,5 +1,40 @@
+<style>
+    .nav-title {
+        top : 21rem;
+    }
+    .nav-subtitle {
+        top: 25rem;
+    }
+    .bg-nav {
+        background: transparent;
+        z-index: 100;
+    }
+    @media screen and (max-width : 450px) {
+        .nav-title {
+            top: 4rem;
+        }
+        .nav-subtitle {
+            top : 6rem
+        }
+        .bg-nav {
+            background: gray;
+        }
+    }
+    @media screen and (max-width : 900px) {
+        .nav-title {
+            top: 10rem;
+        }
+        .nav-subtitle {
+            top : 15rem
+        }
+        .bg-nav {
+            background: gray;
+        }
+    }
+</style>
+
 <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary z-6  w-100 position-fixed">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary text-center z-6 bg-nav w-100 position-fixed">
         <div class="container">
             <a class="navbar-brand col-md-6 text-white fs-4 fw-bold" href="{{ route('home') }}">Traveller</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -22,8 +57,8 @@
         </div>
     </nav>
     <div class="position-relative d-flex justify-content-center">
-        <h1 class="position-absolute z-2 align-items-center text-white" style="top: 21rem">{{ $navbarTitle }}</h1>
-        <h4 class="position-absolute z-2 align-items-center text-white" style="top: 25rem">{{ $navbarSubtitle }}</h4>
+        <h1 class="position-absolute z-2 align-items-center text-white nav-title">{{ $navbarTitle }}</h1>
+        <h4 class="position-absolute z-2 align-items-center text-white nav-subtitle">{{ $navbarSubtitle }}</h4>
     </div>
     <div class="">
         <img src={{ $navbarImage }} alt="pantai" class="w-100 overflow-hidden top-0" />

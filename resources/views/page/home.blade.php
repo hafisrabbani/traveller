@@ -14,8 +14,8 @@
 @section('content')
     <div class="container mt-5">
         <h1 class="fw-bold fs-1">Destinasi Populer</h1>
-        <div class="d-flex justify-content-between">
-            <p class="col-5 mt-1">Destinasi Populer Berikut beberapa rekomendasi destinasi populer yang telah kami rangkum
+        <div class="d-flex justify-content-md-between flex-column">
+            <p class="col-md-5 mt-1">Destinasi Populer Berikut beberapa rekomendasi destinasi populer yang telah kami rangkum
             </p>
             <div class="">
                 <button class="btn btn-dark rounded-5 px-3">Lebih Banyak</button>
@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="container mt-2 d-flex flex-wrap justify-content-between">
+    <div class="container mt-2 d-flex flex-wrap  justify-content-lg-between justify-content-center ">
         @foreach ($destinations as $destination)
             <div class="card my-4" style="width: 22rem;">
                 <img src={{ asset($destination->photo_Path) }} class="card-img-top" alt="...">
