@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comment;
 use App\Models\Destination;
 use App\Models\PhotoDestination;
+use App\Models\Rating;
 use Illuminate\Http\Request;
 
 class DestinationController extends Controller
@@ -31,5 +32,15 @@ class DestinationController extends Controller
         ]);
 
         return back()->with('success', 'Comment sended!');
+    }
+
+    public function ratingCreate(Request $request)
+    {
+        Rating::create([
+            'rating' => $request->rating,
+            'destination_id' => $request->destination_id
+        ]);
+
+        return back()->with('success', 'rating recorded!');
     }
 }

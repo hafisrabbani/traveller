@@ -54,5 +54,6 @@ Route::controller(DestinationController::class)->group(function () {
         Route::get('/', 'index')->name('destination');
         Route::get('detail/{id}', 'detail')->name('destination.detail');
         Route::post('detail/comment', 'commentCreate')->name('destination.comment');
+        Route::post('detail/rating', 'ratingCreate')->name('destination.rating');
     });
 });

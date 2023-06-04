@@ -62,7 +62,7 @@ class UserController extends Controller
 
         Auth::login($user);
         session()->flash('success', 'yeah, login succeeded!');
-        return redirect()->route('profile');
+        return redirect()->route('profile ');
     }
 
     public function logout()
