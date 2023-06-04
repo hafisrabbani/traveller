@@ -23,7 +23,7 @@
         </div>
         <!-- informasi kontak -->
         <div class="col-md-3 mb-3">
-          <div class="h4 pb-3 text-center">Informasi Kontak</div>
+          <div class="h4 pb-3 mt-5 mt-md-0 text-center">Informasi Kontak</div>
           <div class="d-flex flex-column gap-3">
             <a href="https://goo.gl/maps/gd6hsDP7K9oKht4K9?coh=178571&entry=tt" target="blank" class="text-dark text-decoration-none text-center">
               <i class="fa-solid fa-location-dot"></i>

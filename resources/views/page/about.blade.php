@@ -20,8 +20,8 @@
     }
     @media screen and (max-width: 400px) {
         .profil {
-            width : 200px;
-            heigth : 200px;
+            width : 300px;
+            heigth : 150px;
         }
     }
 </style>
@@ -49,7 +49,7 @@
         <br />
         <div class="d-flex flex-column flex-lg-row mt-5 gap-4 gap-md-0">
             <div class="col-lg-5 d-flex justify-content-center justify-content-lg-start">
-                <img src="{{ asset('assets/images/founder.png') }}" class="profil" alt="founder"
+                <img src="{{ asset('assets/images/founder.jpg') }}" class="profil" alt="founder"
                     style="border-top-left-radius: 40%; border-bottom-right-radius: 40%;" />
             </div>
             <div class="col-lg-7">
